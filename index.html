@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhaviiiii's Love Journey ❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Floating Hearts Background Animation -->
+    <div class="hearts-container" id="heartsContainer"></div>
+
+    <!-- Main Container -->
+    <div class="container" id="mainContainer">
+
+        <!-- Welcome Page -->
+        <div class="page active" id="welcome">
+            <div class="content-wrapper fade-in">
+                <h1 class="main-title">Welcome to Bhaviiiii's Love Journey ❤️</h1>
+                <p class="intro-text">Every step reminds me why I love you, Bhavika. Shall we begin our story?</p>
+                <button class="btn-primary" onclick="startJourney()">Begin Journey</button>
+            </div>
+        </div>
+
+        <!-- Chapter 1: Our First Meeting -->
+        <div class="page" id="chapter1">
+            <div class="progress-indicator">
+                <span class="progress-dot active"></span>
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+            </div>
+            <div class="content-wrapper">
+                <h2 class="chapter-title">Our First Meeting ✨</h2>
+                <div class="chapter-content">
+                    <div class="photo-placeholder" id="photo1">
+                        <img src="photo1.jpg" alt="Our First Meeting"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <span class="placeholder-text" style="display:none;">Add photo1.jpg to this folder</span>
+                    </div>
+                    <p class="story-text" id="story1">
+                        This is where I'll write about how we first met... The moment I saw you, I knew there was
+                        something special about you. Your smile lit up the room, and I couldn't help but be drawn to
+                        your warmth and creativity.
+                    </p>
+                </div>
+                <button class="btn-next" onclick="nextChapter(2)">Next Chapter →</button>
+            </div>
+        </div>
+
+        <!-- Chapter 2: Adventures Together -->
+        <div class="page" id="chapter2">
+            <div class="progress-indicator">
+                <span class="progress-dot"></span>
+                <span class="progress-dot active"></span>
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+            </div>
+            <div class="content-wrapper">
+                <h2 class="chapter-title">Adventures Together 🌍</h2>
+                <div class="chapter-content">
+                    <div class="photo-placeholder" id="photo2">
+                        <img src="photo2.jpg" alt="Adventures Together"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <span class="placeholder-text" style="display:none;">Add photo2.jpg to this folder</span>
+                    </div>
+                    <p class="story-text" id="story2">
+                        This is where I'll write about our adventures together... Every journey with you becomes an
+                        unforgettable memory. Whether we're exploring new places or just walking side by side, every
+                        moment is an adventure.
+                    </p>
+                </div>
+                <button class="btn-next" onclick="nextChapter(3)">Next Chapter →</button>
+            </div>
+        </div>
+
+        <!-- Chapter 3: Your Creativity Inspires Me -->
+        <div class="page" id="chapter3">
+            <div class="progress-indicator">
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+                <span class="progress-dot active"></span>
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+            </div>
+            <div class="content-wrapper">
+                <h2 class="chapter-title">Your Creativity Inspires Me 🎨</h2>
+                <div class="chapter-content">
+                    <div class="photo-placeholder" id="photo3">
+                        <img src="photo3.jpg" alt="Your Creativity"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <span class="placeholder-text" style="display:none;">Add photo3.jpg to this folder</span>
+                    </div>
+                    <p class="story-text" id="story3">
+                        This is where I'll write about your amazing creativity... The way you see the world through your
+                        artistic lens inspires me every day. Your creativity knows no bounds, and watching you create is
+                        pure magic.
+                    </p>
+                </div>
+                <button class="btn-next" onclick="nextChapter(4)">Next Chapter →</button>
+            </div>
+        </div>
+
+        <!-- Chapter 4: My Favorite Moments With You -->
+        <div class="page" id="chapter4">
+            <div class="progress-indicator">
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+                <span class="progress-dot active"></span>
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+            </div>
+            <div class="content-wrapper">
+                <h2 class="chapter-title">My Favorite Moments With You 😊</h2>
+                <div class="chapter-content">
+                    <div class="photo-placeholder" id="photo4">
+                        <img src="photo4.jpg" alt="Favorite Moments"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <span class="placeholder-text" style="display:none;">Add photo4.jpg to this folder</span>
+                    </div>
+                    <p class="story-text" id="story4">
+                        This is where I'll write about my favorite moments with you... From quiet evenings to
+                        spontaneous laughter, every moment with you is a treasure. Your presence makes ordinary moments
+                        extraordinary.
+                    </p>
+                </div>
+                <button class="btn-next" onclick="nextChapter(5)">Next Chapter →</button>
+            </div>
+        </div>
+
+        <!-- Chapter 5: Looking Forward, Always -->
+        <div class="page" id="chapter5">
+            <div class="progress-indicator">
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+                <span class="progress-dot active"></span>
+                <span class="progress-dot"></span>
+            </div>
+            <div class="content-wrapper">
+                <h2 class="chapter-title">Looking Forward, Always 💖</h2>
+                <div class="chapter-content">
+                    <div class="photo-placeholder" id="photo5">
+                        <img src="photo5.jpg" alt="Looking Forward"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <span class="placeholder-text" style="display:none;">Add photo5.jpg to this folder</span>
+                    </div>
+                    <p class="story-text" id="story5">
+                        This is where I'll write about our future together... When I think about tomorrow, I see you by
+                        my side. Every dream I have for the future is brighter because you're in it.
+                    </p>
+                </div>
+                <button class="btn-next" onclick="nextChapter(6)">Next Chapter →</button>
+            </div>
+        </div>
+
+        <!-- Proposal Page -->
+        <div class="page" id="proposal">
+            <div class="progress-indicator">
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+                <span class="progress-dot active"></span>
+            </div>
+            <div class="content-wrapper proposal-content">
+                <h2 class="proposal-title">Bhaviiiii, my heart's true north...</h2>
+                <h1 class="proposal-question">Will you be my Valentine? 🌹</h1>
+                <div class="proposal-buttons">
+                    <button class="btn-yes" onclick="handleYes()">Yes!</button>
+                    <button class="btn-no" onclick="handleNo()">No...</button>
+                </div>
+                <div class="playful-message" id="playfulMessage">
+                    Think again, Bhavika—our journey isn't over yet! 😉
+                </div>
+            </div>
+        </div>
+
+        <!-- Celebration Page -->
+        <div class="page" id="celebration">
+            <div class="confetti-container" id="confettiContainer"></div>
+            <div class="content-wrapper celebration-content">
+                <h1 class="celebration-title">YAYYY! 🎉</h1>
+                <div class="love-letter">
+                    <p>I knew you'd say Yes!</p>
+                    <p>You make my world infinitely brighter.</p>
+                    <p>Can't wait for Valentine's Day, my Bhaviiiii! ❤️</p>
+                    <p class="letter-signature">Forever yours,<br>With all my love</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Built with ❤️ for Bhaviiiii</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
