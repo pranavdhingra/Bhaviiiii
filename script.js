@@ -266,3 +266,28 @@ console.log('%c3. Quick test functions:', 'font-size: 14px; color: #4A4A4A;');
 console.log('%c   - replacePhoto(1, "image.jpg") - Replace photo 1', 'font-size: 12px; font-family: monospace;');
 console.log('%c   - replaceStory(1, "text") - Replace story 1', 'font-size: 12px; font-family: monospace;');
 console.log('%c\nMade with ❤️ for Bhavika', 'font-size: 14px; color: #FF69B4; font-style: italic;');
+
+// ===================================
+// PLAYFUL 'NO' BUTTON LOGIC
+// ===================================
+function moveButton() {
+    const noButton = document.querySelector('.btn-no');
+    
+    // Get viewport dimensions
+    const maxWidth = window.innerWidth - noButton.offsetWidth;
+    const maxHeight = window.innerHeight - noButton.offsetHeight;
+    
+    // Calculate random position
+    const randomX = Math.floor(Math.random() * maxWidth);
+    const randomY = Math.floor(Math.random() * maxHeight);
+    
+    // Apply new position
+    noButton.style.position = 'fixed'; // Use fixed to move relative to viewport
+    noButton.style.left = randomX + 'px';
+    noButton.style.top = randomY + 'px';
+    
+    // Add a playful rotation
+    const rotation = Math.random() * 20 - 10; // Random rotation between -10 and 10 degrees
+    noButton.style.transform = 'rotate(' + rotation + 'deg)';
+}
+
